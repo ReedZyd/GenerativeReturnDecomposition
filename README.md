@@ -1,23 +1,9 @@
-# GRD_NeurIPS2023
+# Interpretable Reward Redistribution in Reinforcement Learning: A Causal Approach
 
-This is a TensorFlow implementation for our NeurIPS 2023 paper:
+Yudi Zhang, Yali Du, Biwei Huang, Ziyan Wang, Jun Wang, Meng Fang, Mykola Pechenizkiy
 
+[[OpenReview](https://openreview.net/forum?id=w7TyuWhGZP&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2023%2FConference%2FAuthors%23your-submissions))] [[Arxiv](https://arxiv.org/abs/2305.18427)] [Poster] [Slide] [[Code](https://github.com/ReedZyd/GRD_NeurIPS2023)]
 
-[Interpretable Reward Redistribution in Reinforcement Learning: A Causal Approach](https://arxiv.org/abs/2305.18427)
+## **Abstract**
 
-## Requirements
-
-The requirements are listed as follows:
-1. Python 3.7
-2. gym == 0.18.3
-3. TensorFlow == 2.11.0
-4. BeautifulTable == 0.8.0
-5. opencv-python == 4.5.3.56
-6. wandb==0.13.9
-7. mujoco_py
-8. imageio==2.3.0
-9. numpy==1.21.6
-10. tqdm
-
-## Training & Evaluation
-Coming Soon
+A major challenge in reinforcement learning is to determine which state-action pairs are responsible for future rewards that are delayed. Reward redistribution serves as a solution to re-assign credits for each time step from observed sequences. While the majority of current approaches construct the reward redistribution in an uninterpretable manner, we propose to explicitly model the contributions of state and action from a causal perspective, resulting in an interpretable reward redistribution and preserving policy invariance. In this paper, we start by studying the role of causal generative models in reward redistribution by characterizing the generation of Markovian rewards and trajectory-wise long-term return and further propose a framework, called Generative Return Decomposition (GRD), for policy optimization in delayed reward scenarios. Specifically, GRD first identifies the unobservable Markovian rewards and causal relations in the generative process. Then, GRD makes use of the identified causal generative model to form a compact representation to train policy over the most favorable subspace of the state space of the agent. Theoretically, we show that the unobservable Markovian reward function is identifiable, as well as the underlying causal structure and causal models. Experimental results show that our method outperforms state-of-the-art methods and the provided visualization further demonstrates the interpretability of our method.
