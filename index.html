@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description"
+      content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image"
+      content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Interpretable Reward Redistribution in Reinforcement Learning: A
+      Causal Approach</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  </head>
+  <body>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Interpretable Reward
+                Redistribution in Reinforcement Learning: A Causal Approach</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block"><a
+                    href="https://research.tue.nl/en/persons/yudi-zhang"
+                    target="_blank">Yudi Zhang</a>,</span>
+                <span class="author-block"><a href="https://yalidu.github.io/"
+                    target="_blank">Yali Du</a>,</span>
+                <span class="author-block"><a href="https://biweihuang.com/"
+                    target="_blank">Biwei Huang</a>,</span>
+                <span class="author-block"><a
+                    href="https://coopai.kcl.ac.uk/team/ziyanwang"
+                    target="_blank">Ziyan Wang</a>,</span>
+                <span class="author-block"><a
+                    href="http://www0.cs.ucl.ac.uk/staff/jun.wang/"
+                    target="_blank">Jun Wang</a>,</span>
+                <!-- new line -->
+                <span class="author-block"><a href="https://mengf1.github.io/"
+                    target="_blank">Meng Fang</a>,</span>
+                <span class="author-block"><a
+                    href="https://www.win.tue.nl/~mpechen/" target="_blank">Mykola
+                    Pechenizkiy</a></span>
+
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Eindhoven University of Technology,
+                  King's College London, University of California San Diego,
+                  University College London, University of Liverpool</span>
+                <span class="author-block"><br><b>NeurIPS 2023</b></span>
+                <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="https://openreview.net/forum?id=w7TyuWhGZP"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ReedZyd/GRD_NeurIPS2023"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2305.18427" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+
+                      <!-- Poster -->
+                      <span class="link-block">
+                        <a href target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Poster</span>
+                        </a>
+                      </span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser video-->
+    <!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+    <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div> -->
+    <!-- </section> -->
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                A major challenge in reinforcement learning is to determine
+                which state-action pairs are responsible for future rewards that
+                are delayed.
+                Reward redistribution serves as a solution to re-assign credits
+                for each time step from observed sequences.
+                While the majority of current approaches construct the reward
+                redistribution in
+                an uninterpretable manner, we propose to explicitly model the
+                contributions of
+                state and action from a causal perspective, resulting in an
+                interpretable reward
+                redistribution and preserving policy invariance. In this paper,
+                we start by studying
+                the role of causal generative models in reward redistribution by
+                characterizing the
+                generation of Markovian rewards and trajectory-wise long-term
+                return and further
+                propose a framework, called Generative Return Decomposition
+                (GRD), for policy
+                optimization in delayed reward scenarios. Specifically, GRD
+                first identifies the
+                unobservable Markovian rewards and causal relations in the
+                generative process.
+                Then, GRD makes use of the identified causal generative model to
+                form a compact
+                representation to train policy over the most favorable subspace
+                of the state space of
+                the agent. Theoretically, we show that the unobservable
+                Markovian reward function
+                is identifiable, as well as the underlying causal structure and
+                causal models. Experimental results show that our method
+                outperforms state-of-the-art methods and the
+                provided visualization further demonstrates the interpretability
+                of our method.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">A Causal Reformulation of Reward
+              Redistribution</h2>
+            <div class="content has-text-justified">
+              <p>
+                <div
+                  class="columns  is-four-fifths is-centered has-text-centered">
+                  <div class="column">
+                    <img src="figs/causal_graph.png" alt="Causal Graph"
+                      style="max-width: 50%; height: auto;">
+
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <div class="content has-text-justified">
+                        <p>
+                          <b>Figure 1</b> shows the causal
+                          relationship among environmental variables. The nodes
+                          denote different variables in the MDP environment,
+                          <i>i.e.</i>, all dimensions of state \(\boldsymbol s_{\cdot,
+                          t}\) and action \(\boldsymbol a_{\cdot, {t}}\), Markovian
+                          rewards \(r_{t}\) for \(t\in[1, T]\), as well as the
+                          long-term return \(R\). For sparse reward settings in
+                          RL, the Markovian rewards \(r_t\) are unobservable,
+                          which are represented by nodes with blue filling.
+                          While considering the return-equivalent assumption in
+                          return decomposition, we can observe the
+                          trajectory-wise long-term return, \(R\), which equals
+                          the discounted sum of delayed reward \(o_t\) and
+                          evaluates the performance of the agent within the
+                          whole episode. A special case of delayed rewards is in
+                          episodic RL, where \(o_{1:T-1} = 0\) and \(o_T \neq 0\).
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Generative Return Decomposition</h2>
+            <div class="content has-text-justified">
+              <p>
+                <div
+                  class="columns  is-four-fifths is-centered has-text-centered">
+                  <div class="column">
+                    <img src="figs/framework-camera-ready.png"
+                      alt="Causal Graph"
+                      style="max-width: 90%; height: auto;">
+
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <div class="content has-text-justified">
+                        <p>
+                          <b>Figure 2:</b> The framework of the proposed GRD.
+                          \(\phi_{\text{cau}}\), \(\phi_{\text{rew}}\),
+                          \(\phi_{\text{dyn}}\) in generative model
+                          \(\Phi_{\text{m}}\)
+                          are marked as yellow, blue and green, while policy
+                          model
+                          \(\Phi_{\pi}\) is marked as orange. The observable
+                          variables, state \(\boldsymbol s_t\), action
+                          \(\boldsymbol
+                          a_t\), and the delayed reward \(o_t\), are marked as
+                          gray.
+                          The mediate results, binary masks,
+                          \(\boldsymbol{C}^{\cdot
+                          \rightarrow \cdot}\), outputs of policy, the predicted
+                          Markovian rewards \(\hat{r}_t\) and the compact
+                          representation \(\boldsymbol{s}^{\text{min}}_t\) are
+                          denoted
+                          as purple squares.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Experimental Results</h2>
+            <div class="content has-text-justified">
+              <p>
+                <div
+                  class="columns  is-four-fifths is-centered has-text-centered">
+                  <div class="column">
+                    <img src="figs/main_result.png" alt="Causal Graph"
+                      style="max-width: 90%; height: auto;">
+
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <div class="content has-text-justified">
+                        <p>
+                          <b>Main Results:</b> : Learning curves on a suite of
+                          MuJoCo benchmark tasks with episodic rewards, based on
+                          \(5\)
+                          independent runs with random initialization. The
+                          shaded region indicates the standard deviation and
+                          the curves were smoothed by averaging the 10 most
+                          recent evaluation points using an exponential
+                          moving average. An evaluation point was established
+                          every \(10^4\)
+                          time steps.
+                        </p>
+                      </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <img src="figs/Causal_Structure_Visualization.png"
+                        alt="Causal Graph"
+                        style="max-width: 90%; height: auto;">
+
+                      <br>
+                      <br>
+
+                      <div class="column">
+                        <div class="content has-text-justified">
+                          <p>
+                            <b>Visualization of Learned Causal Structure:</b> :
+                            The visualization of learned causal structure for
+                            <i>Ant</i> when \(t\in [1e4, 5e5, 1e6]\). The color
+                            indicates the probability of the existence of causal
+                            edges, whereas darker colors represent higher
+                            probabilities. There are \(111\) dimensions in the
+                            state variables, but only the first \(27\) ones are
+                            used. (a) The learned causal structure among the
+                            first \(27\) dimensions of the state variable
+                            \(\boldsymbol{s}_t\) to the first \(54\) dimensions
+                            of
+                            the next state variable \(\boldsymbol{s}_{t+1}\).
+                            Due
+                            to the limited space, we only visualize the
+                            structure at \(t=1e4\) and \(t=1e6\). (b) The
+                            learned
+                            causal structure among all dimensions of the action
+                            variable \(\boldsymbol{a}_t\) to the first \(54\)
+                            dimensions of the next state variable
+                            \(\boldsymbol{s}_{t+1}\). (c) The learned causal
+                            structure among the first \(54\) dimensions of the
+                            state variable \(\boldsymbol{s}_t\) to the Markovian
+                            reward variable \(r_t\). (d) The learned causal
+                            structure among all dimensions of action variable
+                            \(\boldsymbol{a}_t\) to the Markovian reward
+                            variable
+                            \(r_t\).
+                          </p>
+                        </div>
+                      </div>
+
+                      <br>
+                      <br>
+
+                      <div class="column">
+                        <img src="figs/robustness.png"
+                          alt="Causal Graph"
+                          style="max-width: 50%; height: auto;">
+
+                        <br>
+                        <br>
+
+                        <div class="column">
+                          <div class="content has-text-justified">
+                            <p>
+                              <b>Evaluation with Gaussian Noise in the State (<i>Ant</i>):</b>
+                              A significant characteristic of <i>Ant</i> is that
+                              only the first \(28\) dimensions of state are
+                              used.
+                              During policy evaluation, we introduce the
+                              independent Gaussian noises with
+                              the mean of \(0\) and standard deviation of \(0
+                              \sim
+                              1\) into those insignificant dimensions (\(28 \sim
+                              111\)).
+                            </p>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="column">
+                          <img src="figs/reward_visualization.png"
+                            alt="Causal Graph"
+                            style="max-width: 100%; height: auto;">
+
+                          <br>
+                          <br>
+
+                          <div class="column">
+                            <div class="content has-text-centered">
+                              <p>
+                                <b>Visualization of Decomposed Rewards (blue)
+                                  and Ground Truth Rewards (Red).</b>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Image carousel -->
+          <!-- <section class="hero is-small"> -->
+          <!-- <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+          <!-- End image carousel -->
+
+          <!-- Youtube video -->
+          <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+          <!-- Paper video. -->
+          <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+          <!-- Youtube embed code here -->
+          <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+          <!-- End youtube video -->
+
+          <!-- Video carousel -->
+          <!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+             -->
+          <!-- Your video file here -->
+          <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+             -->
+          <!-- Your video file here -->
+          <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+             -->
+          <!-- Your video file here -->
+          <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+          <!-- End video carousel -->
+
+          <!-- Paper poster -->
+          <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+          <!--End paper poster -->
+
+          <!--BibTex citation -->
+          <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+              <h2 class="title">BibTeX</h2>
+              <pre><code>
+
+        @inproceedings{
+          grd_neurips2023,
+          title={Interpretable Reward Redistribution in Reinforcement Learning: A Causal Approach},
+          author={Yudi Zhang, Yali Du, Biwei Huang, Ziyan Wang, Jun Wang, Meng Fang and Mykola Pechenizkiy},
+          booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+          year={2023},
+          url={https://openreview.net/forum?id=w7TyuWhGZP}
+          }
+
+
+      </code></pre>
+            </div>
+          </section>
+          <!--End BibTex citation -->
+
+          <footer class="footer">
+            <div class="container">
+              <div class="columns is-centered">
+                <div class="column">
+                  <div class="content">
+
+                    <p>
+                      This page was built using the <a
+                        href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                        target="_blank">Academic Project Page Template</a> which
+                      was
+                      adopted from the <a href="https://nerfies.github.io"
+                        target="_blank">Nerfies</a> project page.
+                      <br> This
+                      website
+                      is
+                      licensed under a <a rel="license"
+                        href="http://creativecommons.org/licenses/by-sa/4.0/"
+                        target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <!-- Statcounter tracking code -->
+
+          <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+          <!-- End of Statcounter Code -->
+
+        </body>
+      </html>
